@@ -1,0 +1,9 @@
+Student,Strategy,Tested Values,Best Value,F1,Improvement,Dataset
+Teammate 1,Dropout,"dropout=0.4, dropout=0.3, dropout=0.2",dropout=0.4,0.6635,+0.0191,ODD_EVEN
+Teammate 1,Weight Decay,"weight_decay=1e-5, weight_decay=1e-4, weight_decay=1e-3",weight_decay=1e-5,0.6488,+0.0044,ODD_EVEN
+Teammate 1,Data Augmentation,"augmentation=light, augmentation=medium",augmentation=light,0.5739,-0.0705,ODD_EVEN
+Teammate 2,Optimizer,"SGD momentum=0.9, Adam lr=0.001, AdamW lr=0.001 wd=1e-4",Adam lr=0.001,0.5200,-0.1244,ODD_EVEN
+Teammate 2,LR Scheduler,"StepLR step=7 gamma=0.1, ReduceLROnPlateau factor=0.5 patience=3",ReduceLROnPlateau factor=0.5 patience=3,0.6595,+0.0151,ODD_EVEN
+Teammate 2,Batch Size,"batch_size=32, batch_size=64",batch_size=64,0.6713,+0.0268,ODD_EVEN
+Pablo Merino,Label Smoothing,"label_smoothing=0.05, label_smoothing=0.1, label_smoothing=0.2",label_smoothing=0.1,0.6534,+0.0090,ODD_EVEN
+Pablo Merino,Focal Loss,"focal_gamma=1.0, focal_gamma=2.0",focal_gamma=1.0,0.6574,+0.0130,ODD_EVEN

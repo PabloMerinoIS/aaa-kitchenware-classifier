@@ -1,0 +1,2 @@
+Dataset,Exp1_Baseline_Macro_F1,Exp2_Final_Macro_F1,Improvement,Exp2_Test_Accuracy,Exp2_Test_Loss,Best_Val_Macro_F1,Best_Val_Accuracy,Best_Epoch,Training_Time_Seconds,Batch_Size,Epochs,Dropout,Weight_Decay,Loss,Optimizer,LR,Scheduler,Hardware,Timestamp
+ODD+EVEN,0.6346,0.6726,+0.0380,0.6751,0.7779,0.6893,0.6910,27,886.61,64,30,0.4,1e-05,FocalLoss gamma=1.0,SGD,0.01,ReduceLROnPlateau factor=0.5 patience=3,"NVIDIA GeForce RTX 4090 | CUDA 12.8 | CPU Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",2026-05-05 20:14:58
