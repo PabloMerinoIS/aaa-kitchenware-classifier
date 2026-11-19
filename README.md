@@ -28,7 +28,7 @@ Experiment 2 was run on ODD+EVEN only. The OWN test set has just 84 images, so t
 
 ### Experiment 1: baseline
 
-Three convolutional blocks (Conv, BatchNorm, ReLU, MaxPool) followed by a dense layer with dropout 0.5, about 25.8 M parameters. SGD, learning rate 0.01, batch size 16, 20 epochs, images resized to 224x224. Training curves show clear overfitting after roughly epoch 12.
+Three convolutional blocks (Conv, BatchNorm, ReLU, MaxPool) followed by a dense layer with dropout 0.5, about 25.8 M parameters. SGD, learning rate 0.01, batch size 16, 20 epochs, images resized to 224x224. Validation loss starts rising after roughly epoch 12, a sign of overfitting.
 
 ### Experiment 2: what helps a small CNN
 
@@ -66,7 +66,7 @@ src/
   run_experiment1.py     Experiment 1 runner (metrics, plots, logs, tables)
 results/
   tables/                results of experiments 2, 3 and 4 (CSV)
-  figures/               confusion matrices and training curves
+  figures/               confusion matrices
 ```
 
 The code for experiments 2 to 4 is not included in this repository; only their results are.
